@@ -244,6 +244,36 @@ relation.
 -->
 
 ## Changelog
+### 2.0.24 (24.11.2023)
+* updated the adapter import schema for ETS 6.1.1
+
+### 2.0.23 (11.10.2023)
+* corrected wrong GW Port after adapter upgrade
+* allow self-defined values for min and max
+* some small other fixes
+
+### 2.0.22 (04.07.2023)
+* added import specification, solved problems in GaTools
+    
+### 2.0.21 (17.06.2023)
+* fixed license handling
+
+### 2.0.20 (16.06.2023)
+* fixed license handling with js-controller Version > 5
+
+### 2.0.19 (29.05.2023)
+* added ETS V6.1.0 import
+* required node version >= 16.13.1
+
+### 2.0.18 (08.04.2023)
+* fixed send-delay
+* small changes
+
+### 2.0.17 (14.10.2022)
+* added ETSv6.0.6 import
+* major changes in Adapter Config UI
+* fixed change of port settings for LAN-GW
+
 ### 2.0.16 (04.09.2022)
 * added ETSv6.0.5 import
 
@@ -574,11 +604,14 @@ Sentry reporting is used starting with js-controller 3.0.
 The developer is not able to get any further special informations about the system/config/user/enviroment. In case no license is found the
 adapter version and host id is also reported.
 
+## Many thanks for support and help
+* bluefox
+* foxriver76
 
 ## License
 The CC-NC-BY License (CC-NC-BY)
 
-Copyright (c) 2016-2021 K.Ringmann <info@punktnetzwerk.net>
+Copyright (c) 2016-2023 K.Ringmann <info@punktnetzwerk.net>
 
 THE WORK IS PROVIDED UNDER THE TERMS OF THIS CREATIVE
 COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY
