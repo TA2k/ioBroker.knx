@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "knx",
-    "version": "2.0.28",
+    "version": "2.0.29",
     "news": {
+      "2.0.29": {
+        "en": "updated import filter for ETSv 6.3.0",
+        "de": "aktualisierter Importfilter für ETSv 6.3.0",
+        "ru": "обновленный импортный фильтр для ETSv 6.3.0",
+        "pt": "filtro de importação atualizado para ETSv 6.3.0",
+        "nl": "bijgewerkt importfilter voor ETSv 6.3.0",
+        "fr": "filtre d'importation mis à jour pour ETSv 6.3.0",
+        "it": "filtro di importazione aggiornato per ETSv 6.3.0",
+        "es": "filtro de importación actualizado para ETSv 6.3.0",
+        "pl": "zaktualizowany filtr importu dla ETSv 6.3.0",
+        "uk": "оновлений імпортний фільтр для ETSv 6.3.0",
+        "zh-cn": "eTSv 6.3.0 更新的导入过滤器"
+      },
       "2.0.28": {
         "en": "Update license related data and fix package version",
         "de": "Aktualisieren von lizenzbezogenen Daten und Fixpaketversion",
@@ -210,7 +223,6 @@
         "dsn": "https://360fcb75fa344c36b722fdfd723951a8@sentry.iobroker.net/162"
       }
     },
-    "subscribe": "messagebox",
     "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.knx/master/admin/knx.png",
     "compact": true,
     "keywords": [
@@ -226,6 +238,8 @@
     ],
     "loglevel": "info",
     "type": "iot-systems",
+    "connectionType": "local",
+    "dataSource": "push",
     "adminColumns": [
       {
         "name": {
@@ -311,11 +325,11 @@
     ],
     "tier": 2,
     "licenseInformation": {
-      "link": "https://github.com/ioBroker/ioBroker.knx?tab=readme-ov-file#license-requirements",
+      "link": "https://raw.githubusercontent.com/ioBroker/ioBroker.knx/master/LICENSE",
       "type": "limited",
       "license": "CC-BY-NC-4.0"
     },
-    "installedFrom": "iobroker.knx@latest"
+    "installedFrom": "iobroker.knx@2.0.29"
   },
   "native": {
     "useBooleans": true,
