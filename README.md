@@ -245,9 +245,15 @@ relation.
 -->
 
 ## Changelog
-### 2.0.28 (11.12.2024)
+### 2.0.30 (22.12.2024)
+* fixed GUI errors, starting redesign GA-Tools
+
+### 2.0.29 (11.12.2024)
 * updated the adapter import schema for ETS 6.3.0
 * nodejs >= 20 is required 
+
+### 2.0.28
+* Update license related data and fix package version
 
 ### 2.0.27 (02.05.2024)
 * updated the adapter import schema for ETS 6.2.2

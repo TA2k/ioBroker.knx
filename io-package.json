@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "knx",
-    "version": "2.0.29",
+    "version": "2.0.30",
     "news": {
+      "2.0.30": {
+        "en": "fixed GUI errors, starting redesign GA-Tools",
+        "de": "gUI Fehler behoben, GA-Tools neu gestaltet",
+        "ru": "фиксированные ошибки GUI, начав редизайн GA-Tools",
+        "pt": "erros de GUI fixos, começando redesign GA-Tools",
+        "nl": "vaste GUI-fouten, start met herontwerp GA-tools",
+        "fr": "erreurs d'interface graphique corrigées, démarrage redessiner GA-Tools",
+        "it": "errori GUI fissi, riprogettazione iniziale GA-Tools",
+        "es": "errores de GUI fijos, empezando a rediseñar GA-Herramientas",
+        "pl": "stałe błędy GUI, począwszy od zmiany projektu GA- Narzędzia",
+        "uk": "виправлені помилки інтерфейсу, починаючи редизайн GA-Tools",
+        "zh-cn": "固定的图形用户界面错误, 开始重新设计 GA- Tools"
+      },
       "2.0.29": {
         "en": "updated import filter for ETSv 6.3.0",
         "de": "aktualisierter Importfilter für ETSv 6.3.0",
@@ -329,7 +342,7 @@
       "type": "limited",
       "license": "CC-BY-NC-4.0"
     },
-    "installedFrom": "iobroker.knx@2.0.29"
+    "installedFrom": "iobroker.knx@2.0.30"
   },
   "native": {
     "useBooleans": true,
