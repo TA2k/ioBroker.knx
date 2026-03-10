@@ -26,9 +26,41 @@
             window.process = window.process || {};
             window.process.browser = true;
         </script>
-        <script type="text/javascript" onerror="setTimeout(function(){window.location.reload()}, 5000)" src="./lib/js/socket.io.js"></script>
+        <script>
+            // Socket.IO automatisch passend zur Umgebung laden
+            // - Vite (Port 3000): über Vite-Proxy /lib
+            // - ioBroker Admin: relativ aus ../../lib
+            // - Fallback: absolute URL basierend auf aktuellem Host/Proto
+            const script = document.createElement('script');
+            window.registerSocketOnLoad = function (cb) {
+                window.socketLoadedHandler = cb;
+            };
+            script.onload = function () {
+                typeof window.socketLoadedHandler === 'function' && window.socketLoadedHandler();
+            };
+            const { protocol, hostname, port } = window.location;
+            const isViteDev = port === '3000';
+            // Primäre Quelle abhängig von Umgebung
+            // Dev: Admin läuft aktuell über HTTP → direkt vom Admin über HTTP laden
+            let src = isViteDev ? 'http://localhost:8081/lib/js/socket.io.js' : '../../lib/js/socket.io.js';
+            // Fallback-URL absolut: nutzt aktuellen Host/Port (z. B. https://<host>:8081)
+            const fallback = `${protocol}//${hostname}:${isViteDev ? '8081' : (port || (protocol === 'https:' ? '443' : '80'))}/lib/js/socket.io.js`;
+            let triedFallback = false;
+            script.onerror = function() {
+                if (!triedFallback) {
+                    triedFallback = true;
+                    script.src = fallback;
+                } else {
+                    setTimeout(function() {
+                        window.location.reload();
+                    }, 5000);
+                }
+            };
+            script.src = src;
+            document.head.appendChild(script);
+        </script>
         <title>KNX settings</title>
-      <script type="module" crossorigin src="./assets/index-0B2uCq_p.js"></script>
+      <script type="module" crossorigin src="./assets/index-BlyYEsJx.js"></script>
       <link rel="stylesheet" crossorigin href="./assets/index-Bd3GtHgn.css">
     </head>
     <body>

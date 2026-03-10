@@ -1,8 +1,34 @@
 {
   "common": {
     "name": "knx",
-    "version": "2.0.35",
+    "version": "2.0.38",
     "news": {
+      "2.0.38": {
+        "en": "added ETS6.4.0 support",
+        "de": "eTS6.4.0 Unterstützung",
+        "ru": "поддержка ETS6.4.0",
+        "pt": "suporte ETS6.4.0 adicionado",
+        "nl": "toegevoegde ETS6.0 ondersteuning",
+        "fr": "appui additionnel ETS6.4.0",
+        "it": "aggiunto supporto ETS6.4.0",
+        "es": "añadido soporte ETS6.4.0",
+        "pl": "dodane wsparcie ETS6.4.0",
+        "uk": "додано підтримку ETS6.4.0",
+        "zh-cn": "添加 ETS6.4.0 支持"
+      },
+      "2.0.37": {
+        "en": "dependency updates, bug fix in adapter configuration",
+        "de": "abhängigkeitsaktualisierung, bugfix in adapterkonfiguration",
+        "ru": "обновления зависимостей, исправление ошибок в конфигурации адаптера",
+        "pt": "atualizações de dependência, correção de erros na configuração do adaptador",
+        "nl": "afhankelijkheidsupdates, foutherstel in adapterconfiguratie",
+        "fr": "mises à jour de dépendance, correction de bug dans la configuration de l'adaptateur",
+        "it": "aggiornamenti di dipendenza, correzione bug nella configurazione dell'adattatore",
+        "es": "actualizaciones de dependencia, corrección de errores en la configuración del adaptador",
+        "pl": "aktualizacje zależności, poprawianie błędów w konfiguracji adaptera",
+        "uk": "оновлення залежності, виправлення помилок в конфігурації адаптера",
+        "zh-cn": "依赖性更新, 适配器配置中的错误修复"
+      },
       "2.0.35": {
         "en": "dependency updates, bug fixing in GA-Tools, feature enhancements in GA-Tools",
         "de": "abhängigkeitsaktualisierungen, Bugfixierung in GA-Tools, Featureerweiterungen in GA-Tools",
@@ -246,7 +272,7 @@
       "type": "limited",
       "license": "CC-BY-NC-4.0"
     },
-    "installedFrom": "iobroker.knx@2.0.35"
+    "installedFrom": "iobroker.knx@2.0.38"
   },
   "native": {
     "useBooleans": true,
